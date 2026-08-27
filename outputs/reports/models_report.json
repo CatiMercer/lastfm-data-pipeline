@@ -1,0 +1,48 @@
+{
+    "supervisat": {
+        "model": "Random Forest",
+        "accuracy": 0.8633,
+        "feature_importance": [
+            {
+                "feature": "scrobbles_log",
+                "importance": 0.8489396061534444
+            },
+            {
+                "feature": "age",
+                "importance": 0.05456003858909276
+            },
+            {
+                "feature": "tag_other",
+                "importance": 0.03339387429284025
+            },
+            {
+                "feature": "tag_pop",
+                "importance": 0.015390686153863225
+            },
+            {
+                "feature": "tag_metal",
+                "importance": 0.014355264762858425
+            },
+            {
+                "feature": "tag_indie",
+                "importance": 0.011694007577729837
+            },
+            {
+                "feature": "tag_rock",
+                "importance": 0.008287001244031414
+            },
+            {
+                "feature": "tag_electronic",
+                "importance": 0.007208724704038647
+            },
+            {
+                "feature": "tag_hip-hop",
+                "importance": 0.006170796522100858
+            }
+        ]
+    },
+    "no_supervisat": {
+        "model": "K-Means (k=3)",
+        "silhouette_score": 0.6318
+    }
+}

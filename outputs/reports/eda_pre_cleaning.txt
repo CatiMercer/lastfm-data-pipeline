@@ -1,0 +1,87 @@
+======================================================================
+ INFORME EDA - Pràctica 2: Neteja i Anàlisi de Dades
+======================================================================
+ Assignatura: Tipologia i Cicle de Vida de les Dades (M2.951)
+ Autors: Catalina Mª Mercer Campins, Ayany Alvarado Graveran
+ Data de generació: 2026-05-22 17:46:40
+ Dataset analitzat: artists_bs4.csv (original)
+ Registres: 10512 | Variables: 13
+======================================================================
+
+
+--- 1. Primeres 5 files ---
+                                 artist_url          scraped_from  ...                                                bio                      top_track
+0      https://www.last.fm/music/Kanye+West  charts_weekly_page_1  ...  Ye, born Kanye Omari West on June 8, 1977, is ...    FATHER (feat. Travis Scott)
+1  https://www.last.fm/music/PinkPantheress  charts_weekly_page_1  ...  Victoria Beverley Walker (born 19 April 2001),...       Stateside + Zara Larsson
+2      https://www.last.fm/music/The+Weeknd  charts_weekly_page_1  ...  Abel Makkonen Tesfaye (born February 16, 1990)...  Timeless (feat Playboi Carti)
+3     https://www.last.fm/music/Tame+Impala  charts_weekly_page_1  ...  Tame Impala is the psychedelic music project o...         Dracula - JENNIE remix
+4    https://www.last.fm/music/Taylor+Swift  charts_weekly_page_1  ...  Taylor Alison Swift is an American singer-song...            The Fate of Ophelia
+
+[5 rows x 13 columns]
+
+--- 2. Columnes del DataFrame ---
+['artist_url', 'scraped_from', 'scraped_date', 'artist_name', 'listeners', 'scrobbles', 'tags', 'rank', 'latest_release_date', 'similar_artists', 'age', 'bio', 'top_track']
+
+--- 3. Informació General ---
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 10512 entries, 0 to 10511
+Data columns (total 13 columns):
+ #   Column               Non-Null Count  Dtype  
+---  ------               --------------  -----  
+ 0   artist_url           10512 non-null  object 
+ 1   scraped_from         10512 non-null  object 
+ 2   scraped_date         10512 non-null  object 
+ 3   artist_name          10494 non-null  object 
+ 4   listeners            10495 non-null  float64
+ 5   scrobbles            10495 non-null  float64
+ 6   tags                 10493 non-null  object 
+ 7   rank                 0 non-null      float64
+ 8   latest_release_date  0 non-null      float64
+ 9   similar_artists      10493 non-null  object 
+ 10  age                  3359 non-null   float64
+ 11  bio                  9955 non-null   object 
+ 12  top_track            10448 non-null  object 
+dtypes: float64(5), object(8)
+memory usage: 1.0+ MB
+
+--- 4. Valors buits per columna ---
+artist_url                 0
+scraped_from               0
+scraped_date               0
+artist_name               18
+listeners                 17
+scrobbles                 17
+tags                      19
+rank                   10512
+latest_release_date    10512
+similar_artists           19
+age                     7153
+bio                      557
+top_track                 64
+dtype: int64
+
+--- 5. Conteig de valors zero ---
+listeners              12
+scrobbles              12
+rank                    0
+latest_release_date     0
+age                     1
+dtype: int64
+
+--- 6. Estadístiques descriptives (numèriques) ---
+          listeners     scrobbles  rank  latest_release_date          age
+count  1.049500e+04  1.049500e+04   0.0                  0.0  3359.000000
+mean   5.150920e+05  1.993827e+07   NaN                  NaN    44.703781
+std    8.294600e+05  8.215947e+07   NaN                  NaN    15.097896
+min    0.000000e+00  0.000000e+00   NaN                  NaN     0.000000
+25%    6.784150e+04  8.162625e+05   NaN                  NaN    33.000000
+50%    2.068890e+05  3.168985e+06   NaN                  NaN    42.000000
+75%    5.839160e+05  1.205758e+07   NaN                  NaN    53.000000
+max    9.077838e+06  3.650316e+09   NaN                  NaN   101.000000
+
+--- 7. Estadístiques descriptives (categòriques) ---
+                                  artist_url          scraped_from scraped_date artist_name       tags                    similar_artists        bio top_track
+count                                  10512                 10512        10512       10494      10493                              10493       9955     10448
+unique                                 10512                   642            2       10494      10088                              10466       9947     10008
+top     https://www.last.fm/music/Kanye+West  charts_weekly_page_1   2026-04-08  Kanye West  reggaeton  The Funky Lowlives|Hird|Marsmobil  View wiki       You
+freq                                       1                    50         6389           1         27                                  3          3         7

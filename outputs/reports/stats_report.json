@@ -1,0 +1,25 @@
+{
+    "normalitat": {
+        "variable": "scrobbles",
+        "test": "Kolmogorov-Smirnov",
+        "p_value": 0.0,
+        "es_normal": "False"
+    },
+    "correlacio": {
+        "test": "Spearman",
+        "listeners_vs_scrobbles": 0.92,
+        "p_value": 0.0
+    },
+    "homocedasticitat": {
+        "comparacio": "Rock vs Pop",
+        "test": "Levene",
+        "p_value": 0.0071,
+        "variancies_iguals": "False"
+    },
+    "contrast_hipotesi": {
+        "comparacio": "Rock vs Pop",
+        "test": "Mann-Whitney U",
+        "p_value": 0.0678,
+        "significatiu": "False"
+    }
+}
