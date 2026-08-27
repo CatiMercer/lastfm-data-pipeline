@@ -37,7 +37,7 @@ Last.fm
    ↓
 Web Scraping
    ↓
-Raw Data
+Extracted Data
    ↓
 Data Cleaning & Transformation
    ↓
