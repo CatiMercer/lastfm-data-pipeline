@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# Selenium checkpoints
+data/selenium_checkpoint_*.csv
+
+# Generated scraping outputs
+data/artists_selenium.csv
+data/artists_merged.csv
+
+# OS
+.DS_Store
+Thumbs.db
