@@ -119,6 +119,20 @@ Els resultats dels models es poden consultar a:
 
 `outputs/reports/models_report.json`
 
+## 📊 Resultats visuals
+
+### Importància de variables
+
+![Feature importance](outputs/img/feature_importance.png)
+
+### Matriu de confusió
+
+![Confusion matrix](outputs/img/confusion_matrix.png)
+
+### Clustering amb K-Means
+
+![K-Means clusters](outputs/img/clusters_kmeans.png)
+
 ## 📈 Visualitzacions
 
 El pipeline genera diferents visualitzacions per facilitar l'exploració i interpretació dels resultats, entre elles:
